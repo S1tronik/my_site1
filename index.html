@@ -1,0 +1,272 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .form-group {
+            margin-bottom: 15px;
+            max-width: 600px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"],
+        input[type="tel"],
+        input[type="date"],
+        textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #2455db;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #2455db;
+        }
+        .carousel-control-prev,
+        .carousel-control-next {
+            width: 5%;
+        }
+        .carousel-item {
+            padding: 20px 0;
+        }
+        .card {
+            margin: 0 auto;
+        }
+    </style>
+  </head>
+  <body>
+   <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Animal home</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#Form1">Взять собаку</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="form2.html">Взять кошку</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Обратная связь
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="formOnas.html">О нас</a></li>
+            <li><a class="dropdown-item" href="#">Пожертвовать</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Контакты</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" aria-disabled="true">Помощь</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Поиск..." aria-label="Search" style="color:rgb(0, 0, 0);"/>
+        <button class="btn " type="submit" style="color: #2455db;">Поиск</button>
+      </form>
+    </div>
+  </div>
+</nav>
+   </header>
+   <center><section >
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-8">
+                <h1>Добро пожаловать <strong>Animal home</strong></h1>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo sint similique ipsam asperiores magnam iusto. Qui soluta reiciendis, facere unde tempore repudiandae dignissimos neque impedit temporibus! Quisquam soluta culpa, laborum error provident alias repudiandae veniam sint aliquam commodi a distinctio, tenetur suscipit nulla quae quidem reiciendis magni libero porro blanditiis. Commodi placeat incidunt dicta corrupti ad molestias cupiditate soluta qui culpa alias tenetur nam, ducimus porro excepturi exercitationem delectus harum at labore provident eligendi nostrum ab maxime? Iste officia, facilis pariatur error, nihil reiciendis corporis quam eveniet delectus, quibusdam perspiciatis exercitationem? Ratione, excepturi! Ea deleniti suscipit libero esse. Veniam, non voluptatum, accusamus explicabo libero incidunt quisquam, repellat labore sit rerum corporis possimus excepturi! Adipisci, repellendus corrupti quo.</p>
+            </div>
+            <div class="col-4">
+                <img src="img/Собчка.png" alt="" width="300px">
+            </div>
+        </div>
+</div>
+
+
+   <br><br><br>
+   <hr>
+   
+    <h2>Наши животные</h2>
+   <div id="petsCarousel" class="carousel slide" data-bs-ride="carousel">
+     <div class="carousel-inner">
+       <div class="carousel-item active">
+         <div class="row justify-content-center">
+           <div class="col-md-4">
+             <div class="card" style="width: 18rem;">
+               <img src="img/Хаски.png" class="card-img-top" alt="...">
+               <div class="card-body">
+                 <h5 class="card-title">Барбос</h5>
+                 <p class="card-text">Добрый, ласковый котик ищет свою семью <br> Возраст - 3 года</p>
+                 <a href="form.html" class="btn btn-primary">Забрать друга</a>
+               </div>
+             </div>
+           </div>
+         </div>
+       </div>
+       <div class="carousel-item">
+         <div class="row justify-content-center">
+           <div class="col-md-4">
+             <div class="card" style="width: 18rem;">
+               <img src="img/Хаски.png" class="card-img-top" alt="...">
+               <div class="card-body">
+                 <h5 class="card-title">Рекс</h5>
+                 <p class="card-text">Энергичный и весёлый пёс <br> Возраст - 2 года</p>
+                 <a href="form.html" class="btn btn-primary">Забрать друга</a>
+               </div>
+             </div>
+           </div>
+         </div>
+       </div>
+       <div class="carousel-item">
+         <div class="row justify-content-center">
+           <div class="col-md-4">
+             <div class="card" style="width: 18rem;">
+               <img src="img/Хаски.png" class="card-img-top" alt="...">
+               <div class="card-body">
+                 <h5 class="card-title">Шарик</h5>
+                 <p class="card-text">Спокойный и преданный друг <br> Возраст - 4 года</p>
+                 <a href="form.html" class="btn btn-primary">Забрать друга</a>
+               </div>
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
+     <button class="carousel-control-prev" type="button" data-bs-target="#petsCarousel" data-bs-slide="prev" >
+       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+       <span class="visually-hidden">Предыдущий</span>
+     </button>
+     <button class="carousel-control-next" type="button" data-bs-target="#petsCarousel" data-bs-slide="next">
+       <span class="carousel-control-next-icon" aria-hidden="true"></span>
+       <span class="visually-hidden">Следующий</span>
+     </button>
+   </div>
+   <br><br><br>
+ </section>
+  </center>
+  <hr>
+   <div class="row">
+    <div class="col">
+       <div class="card" style="width: 18rem;">
+  <img src="img/Хаски.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Барбос</h5>
+    <p class="card-text">Добрый, ласковый пёсик ищет свою семью <br> Возраст - 3 года</p>
+    <a href="form.html" class="btn btn-primary">Забрать друга</a>
+  </div>
+</div>
+    </div>
+    <div class="col">
+       <div class="card" style="width: 18rem;">
+  <img src="img/Хаски.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Барбос</h5>
+    <p class="card-text">Добрый, ласковый пёсик ищет свою семью <br> Возраст - 3 года</p>
+    <a href="form.html" class="btn btn-primary">Забрать друга</a>
+  </div>
+</div>
+    </div>
+    <div class="col">
+       <div class="card" style="width: 18rem;">
+  <img src="img/Хаски.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Барбос</h5>
+    <p class="card-text">Добрый, ласковый пёсик ищет свою семью <br> Возраст - 3 года</p>
+    <a href="form.html" class="btn btn-primary">Забрать друга</a>
+  </div>
+</div>
+    </div>
+  </div>
+  <hr>
+  <center> <form action="submit_form.php" method="POST" class="form2">
+        
+        <div class="form-group" id="Form1">
+            <label for="fullname">ФИО *</label>
+            <input type="text" id="fullname" name="fullname" required>
+        </div>
+
+        <div class="form-group">
+            <label for="phone">Контактный телефон *</label>
+            <input type="tel" id="phone" name="phone" required>
+        </div>
+
+        <div class="form-group">
+            <label for="address">Адрес проживания *</label>
+            <input type="text" id="address" name="address" required>
+        </div>
+
+      
+        <div class="form-group">
+            <label for="dogname">Кличка собаки *</label>
+            <input type="text" id="dogname" name="dogname" required>
+        </div>
+
+        <div class="form-group">
+            <label for="dogid">Идентификационный номер собаки (если известен)</label>
+            <input type="text" id="dogid" name="dogid">
+        </div>
+
+        
+        <div class="form-group">
+            <label for="date">Дата *</label>
+            <input type="date" id="date" name="date" required>
+        </div>
+
+        <div class="form-group">
+            <label>
+                <input type="checkbox" name="agreement" required>
+                Я обязуюсь обеспечить собаке надлежащий уход и условия содержания *
+            </label>
+        </div>
+
+        <button type="submit">Отправить заявление</button>
+    </form></center>
+  </body>
+  <br><br><br>
+  <footer class="bg-dark text-white py-4">
+     <div class="container">
+       <div class="row">
+         <div class="col-md-4 mb-4 mb-md-0">
+           <h5>Animal home</h5>
+           <p>Мы помогаем животным найти свой дом уже более 10 лет.</p>
+         </div>
+         <div class="col-md-4 mb-4 mb-md-0">
+           <h5>Контакты</h5>
+           <p>г. Самара, ул. Добрая, д. 15<br>Телефон: +7 (495) 123-45-67<br>Email: Animalhome@yandex.ru</p>
+         </div>
+         <div class="col-md-4">
+           <h5>Мы в соцсетях</h5>
+           <div class="d-flex gap-3">
+             <a href="#" class="text-white">ВКонтакте</a>
+             <a href="#" class="text-white">Telegram</a>
+             <a href="#" class="text-white">Instagram</a>
+           </div>
+         </div>
+       </div>
+       <hr>
+       <div class="text-center">
+         <p class="mb-0">&copy; 2025 Animal home. Все права защищены.</p>
+       </div>
+     </div>
+   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+</html>
